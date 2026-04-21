@@ -18,10 +18,7 @@ Maintained by **Anirban**
 ---
 
 ## 🔑 Default Login
-```
-
-Password: admin123
-```
+Password:```admin123```
 
 ⚠️ **Important:** First login এর পর অবশ্যই password change করে নাও।
 
@@ -64,7 +61,7 @@ sudo apt install apache2 php unzip git -y
 
 ### 🔹 Step 3: Project Download (GitHub)
 ```bash
-git clone https://github.com/your-username/srm-panel.git
+git clone https://github.com/anirbansumon099/srm-panel.git
 ```
 
 ---
