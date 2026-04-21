@@ -18,7 +18,10 @@ Maintained by **Anirban**
 ---
 
 ## 🔑 Default Login
-Password:```admin123```
+Password:
+```
+admin123
+```
 
 ⚠️ **Important:** First login এর পর অবশ্যই password change করে নাও।
 
