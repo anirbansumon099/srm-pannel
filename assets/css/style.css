@@ -1,0 +1,138 @@
+
+        :root { --bg-light: #f8fafc; --card-white: #ffffff; --border-color: #e2e8f0; --text-dark: #1e293b; }
+        
+        html, body { 
+            height: 100%; 
+            overflow: visible !important;
+        }
+        body { 
+          padding-top:90px;
+            background-color: var(--bg-light); 
+            color: var(--text-dark); 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        .navbar { 
+          position:fixed;
+          top:0;
+          left:0;
+          right: 0;
+           background: #1e293b; 
+            border-bottom: 1px solid #334155; 
+            padding: 12px 20px; 
+        }
+        .brand { color: #fff; font-size: 20px; text-decoration: none; font-weight: 600; }
+        .brand span { color: #ff6c2c; font-weight: 800; }
+       
+        /* ===== TOOLBAR FIX ===== */
+.cp-toolbar { 
+    position: fixed;
+    top: 52px;
+    left: 0;    /* এটি যোগ করুন */
+    right: 0;   /* এটি যোগ করুন */
+    z-index: 1050;
+    background: var(--card-white);
+    padding: 10px;
+    display: flex; 
+    gap: 8px; 
+    overflow-x: auto; /* scroll এর বদলে auto ব্যবহার করা ভালো */
+    overflow-y: hidden;
+    border-bottom: 1px solid var(--border-color); 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    flex-wrap: nowrap; /* বাটনগুলো যাতে এক লাইনে থাকে */
+    min-height: 45px;
+    -webkit-overflow-scrolling: touch; /* মোবাইলে স্মুথ স্ক্রলিংয়ের জন্য */
+}
+
+/* বাটনগুলো যাতে ছোট হয়ে না যায় (আগের কোডে না থাকলে এটি যোগ করুন) */
+.tool-btn {
+    flex-shrink: 0; 
+}
+
+        .tool-btn { 
+            background: #fff; 
+            border: 1px solid var(--border-color); 
+            color: var(--text-dark); 
+            padding: 6px 14px; 
+            border-radius: 6px; 
+            font-size: 13px; 
+            font-weight: 500; 
+            transition: 0.2s; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .tool-btn:hover { background: #f1f5f9; border-color: #cbd5e1; }
+
+        /* Table Styling */
+        .main-card { 
+            background: var(--card-white); 
+            border: 1px solid var(--border-color); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            margin-bottom: 30px; 
+            flex: 1; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .table { 
+            background-color: #ffffff; 
+            margin-bottom: 0; 
+        }
+        .table thead { background: #f1f5f9; }
+        .table th { 
+            color: #64748b; 
+            font-size: 12px; 
+            text-transform: uppercase; 
+            padding: 15px; 
+            border-bottom: 1px solid var(--border-color); 
+        }
+        .table td { 
+            background-color: #ffffff !important; 
+            color: #000000 !important; 
+            vertical-align: middle; 
+            padding: 12px 15px; 
+            border-bottom: 1px solid #f1f5f9; 
+        }
+        .table tr:hover td { background-color: #f8fafc !important; }
+
+        .file-name-link { 
+            text-decoration: none !important; 
+            color: #000000 !important; 
+            display: flex; 
+            align-items: center; 
+            font-weight: 500; 
+            font-size: 14px; 
+        }
+        .folder-icon { color: #f59e0b; font-size: 18px; margin-right: 12px; }
+        .file-icon { color: #64748b; font-size: 17px; margin-right: 12px; }
+
+        .disk-usage-card { 
+            background: #fff; 
+            border: 1px solid var(--border-color); 
+            border-radius: 12px; 
+            margin-bottom: 15px; 
+            padding: 15px; 
+        }
+        .breadcrumb { 
+            background: #fff; 
+            border: 1px solid var(--border-color); 
+            padding: 10px 15px; 
+            border-radius: 8px; 
+            margin-bottom: 15px; 
+        }
+        
+        .container-fluid {
+            overflow: visible !important;
+        }
+
+        footer { 
+            background: #fff; 
+            border-top: 1px solid var(--border-color); 
+            padding: 20px 0; 
+            margin-top: auto; 
+        }
+    
